@@ -1,14 +1,4 @@
-#include <stdio.h>
-
-/**
- *
- *  * main - entry point
- *
- *   *
- *
- *    * Return: void
- *
- *     */
+#include <stdio.h>
 
 
 
@@ -16,60 +6,28 @@ int main(void)
 
 {
 
-		int j = 100;
+    
 
-			int i;
+	for (int i = 0; i <= 9; i++)
+
+	{
+
+		putchar(i + '0');
+
+		if (i != 9) {
+
+		    putchar(',');
+
+		    putchar(' ');
+
+		}
+
+	}
+
+	putchar('\n');
 
 
 
-				i = 1;
-
-					while (i <= j)
-
-							{
-
-										if (i % 3 == 0 && i % 5 == 0)
-
-													{
-
-																	printf("FizzBuzz");
-
-																			}
-
-												else if (i % 3 == 0)
-
-															{
-
-																			printf("Fizz");
-
-																					}
-
-														else if (i % 5 == 0)
-
-																	{
-
-																					printf("Buzz");
-
-																							}
-
-																else
-
-																			{
-
-																							printf("%i", i);
-
-																									}
-
-																		if (i != 100)
-
-																					printf(" ");
-
-																			i++;
-
-																				}
-
-						printf("\n");
-
-							return (0);
+    return 0;
 
 }
