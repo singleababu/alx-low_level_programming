@@ -1,53 +1,45 @@
-#include "main.h"
+#include <stdio.h>
 
-/**
- *
- *  * print_square -prints a square
- *
- *   * @size: print size
- *
- *    * Return: Always 0.
- *
- *     */
 
-void print_square(int size)
+
+int main(void)
 
 {
 
-		int i;
+    char ch = 'a';
 
-			int k;
+    int i = 0;
 
+    
 
+	while (i < 16)
 
-				if (size > 0)
+	{
 
-						{
+		if (i < 10)
 
-									for (i = 0; i < size; i++)
+		{
 
-												{
+			putchar(i + '0');
 
-																for (k = 0; k < size; k++)
+		}
 
-																				{
+		else
 
-																									_putchar (35);
+		{
 
-																												}
+		    putchar(ch);
 
-																			_putchar ('\n');
+		    ch++;
 
-																					}
+		}
 
-										}
+		i++;
 
-					else
+	}
 
-							{
+	putchar('\n');
 
-										_putchar ('\n');
-
-											}
+    return 0;
 
 }
