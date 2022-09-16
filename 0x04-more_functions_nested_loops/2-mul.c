@@ -1,14 +1,39 @@
-#include "main.h"
-#include <stdio.h>
+include <stdio.h>
 
 /**
- * mul - multiplies two integers
- * @a: print int
- * @b: print int
- * Return: Always 0.
+
+ * main - Program entry point
+
+ *
+
+ * Return: 0 on success. Error code otherwise
+
  */
 
-int mul(int a, int b)
+int main(void)
+
 {
-	return (a * b);
+
+	char a = 'a';
+
+	int n = 0;
+
+
+
+	while (n < 26)
+
+	{
+
+		putchar(a);
+
+		a++;
+
+		n++;
+
+	}
+
+	putchar('\n');
+
+	return (0);
+
 }
