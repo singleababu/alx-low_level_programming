@@ -1,0 +1,3 @@
+#!/bin/bao c $CFILEsh
+#gcc -E -
+gcc -E -o
