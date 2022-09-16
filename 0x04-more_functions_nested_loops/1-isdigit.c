@@ -1,20 +1,58 @@
-#include "main.h"
+#include <stdlib.h>
+
 #include <stdio.h>
 
+#include <time.h>
+
+/* more headers goes there */
+
+
+
 /**
- * _isdigit - check for a digit
- * @c: variable
+
+ * main - Program entry point
+
  *
- * Return: Always 0.
+
+ * Return: 0 on success. Error code otherwise
+
  */
-int _isdigit(int c)
+
+int main(void)
+
 {
-      if (c >= 48 && c <= 57
-      {
-           return (1);
-      }
-      else
-      {
-           return (0);
-      }
- }
+
+	int n, lastDigit;
+
+
+
+	srand(time(0));
+
+	n = rand() - RAND_MAX / 2;
+
+	lastDigit = n % 10;
+
+	/* your code goes there */
+
+	if (lastDigit > 5)
+
+		printf("Last digit of %d is %d and is greater than 5\n", n, lastDigit);
+
+	else if (lastDigit == 0)
+
+		printf("Last digit of %d is %d and is 0\n", n, lastDigit);
+
+	else if (lastDigit < 6 && lastDigit != 0)
+
+	{
+
+		printf("Last digit of %d is %d and is less than 6 and ", n, lastDigit);
+
+		printf("not 0\n");
+
+	}
+
+	return (0);
+
+}
+
