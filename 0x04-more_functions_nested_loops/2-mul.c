@@ -12,13 +12,3 @@ int mul(int a, int b)
 {
 	return (a * b);
 }
-
-3 #include "main.h"
-
-/**
- * print_numbers -print numbers
- * return: Always 0
- */
-
-void print_numbers(void)
-{
