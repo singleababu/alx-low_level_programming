@@ -1,20 +1,55 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * print_numbers -print numbers
- * return: Always 0
+
+ * main - Program entry point
+
+ *
+
+ * Return: 0 on success. Error code otherwise
+
  */
 
-void print_numbers(void)
-{
-	int i;
+int main(void)
 
-	i = 0;
-	while (i < 10)
+{
+
+	char a = 'a';
+
+	char A = 'A';
+
+	int n = 0;
+
+
+
+	while (n < 52)
+
 	{
-		_putchar (i + '0');
-		i++;
+
+		if (n < 26)
+
+		{
+
+			putchar(a);
+
+			a++;
+
+		} else
+
+		{
+
+			putchar(A);
+
+			A++;
+
+		}
+
+		n++;
+
 	}
 
-	_putchar ('\n');
+	putchar('\n');
+
+	return (0);
+
 }
