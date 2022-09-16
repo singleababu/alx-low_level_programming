@@ -1,19 +1,97 @@
-#include "main.h"
-/**
- * print_most_numbers -print number
- *
- * return: alway 0.
- */
-void print_most_numbers(void)
-{
-	int i;
+#include <stdio.h>
 
-	for (i = 0; i < 10; i++)
+
+
+int main(void)
+
+{
+
+    char ch = 'a';
+
+	while(ch <= 'z')
+
 	{
-		if (i != 2 && i != 4)
+
+		if (ch != 'e' && ch != 'q')
+
 		{
-			_putchar (i + '0');
+
+			putchar(ch);
+
 		}
+
+		ch++;
+
 	}
-	_putchar ('\n');
+
+	putchar('\n');
+
+
+
+    return 0;
+
+}
+
+
+
+#include <stdio.h>
+
+
+
+int main(void)
+
+{
+
+    
+
+	for (char ch = 'a'; ch <= 'z'; ch++)
+
+	{
+
+		if (ch != 'e' && ch != 'q')
+
+		{
+
+			putchar(ch);
+
+		}
+
+	}
+
+	putchar('\n');
+
+
+
+    return 0;
+
+}
+
+
+
+int main(void)
+
+{
+
+    
+
+	for (char ch ='a'; ch <= 'z'; ch++)
+
+	{
+
+		if (ch == 'e' || ch == 'q')
+
+		    ch++;
+
+		putchar(ch);
+
+		
+
+	}
+
+	putchar('\n');
+
+
+
+    return 0;
+
 }
