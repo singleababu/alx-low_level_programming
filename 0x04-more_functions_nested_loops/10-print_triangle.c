@@ -1,93 +1,43 @@
-#include "main.h"
-
-/**
- *
- *  * print_triangle - prints triangle
- *
- *   * @size: print size
- *
- *    * Return: Always 0.
- *
- *     */
+#include <stdio.h>
 
 
 
-void print_triangle(int size)
-
-
+int main(void)
 
 {
 
+    
 
-
-
-
-	int i;
-
-	int z;
-
-	int d;
-
-	int p;
-
-
-
-	if (size > 0)
+	for (int i = 0; i <= 9; i++)
 
 	{
 
-		d = size - 1;
+	    for (int j = i + 1; j <= 9; j++)
 
-		for (i = 0; i < size ; i++)
+	    {
 
-		{
+	        putchar(i + '0');
 
-			for (z = d; z > 0 ; z--)
+	        putchar(j + '0');
 
-			{
+	        if (((i * 10) + j) < 89)
 
-				_putchar (' ');
+	        {
 
-			}
+	            putchar(',');
 
-
-
-			for (p = 0; p <= i; p++)
-
-			{
-
-				_putchar (35);
-
-			}
+                putchar(' ');
 
 
 
-			d--;
+	        }
 
-
-
-			_putchar ('\n');
-
-
-
-
-
-		}
-
-
+	    }
 
 	}
 
+	putchar('\n');
 
-
-	else
-
-	{
-
-		_putchar ('\n');
-
-	}
+    return 0;
 
 }
-
-
